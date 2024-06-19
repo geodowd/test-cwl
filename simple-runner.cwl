@@ -6,7 +6,7 @@ schemas:
   - http://schema.org/version/9.0/schemaorg-current-http.rdf
 $graph:
   - class: Workflow
-    id: simple-runner-workflow
+    id: simple-runner-workflow2
     label: simple runner
     doc: simple runner
     requirements:
