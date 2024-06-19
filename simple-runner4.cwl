@@ -1,18 +1,12 @@
 cwlVersion: v1.2
-$namespaces:
-  s: https://schema.org/
-s:softwareVersion: 0.0.4
-schemas:
-  - http://schema.org/version/9.0/schemaorg-current-http.rdf
 $graph:
   - class: Workflow
-    id: simple-runner-workflow3
+    id: simple-runner-workflow4
     label: simple runner
     doc: simple runner
     requirements:
       NetworkAccess:
         networkAccess: true
-      InlineJavascriptRequirement: {}
 
     inputs:
       inputstring:
@@ -39,7 +33,6 @@ $graph:
         DockerRequirement:
           dockerPull: public.ecr.aws/z0u8g6n1/simple_runner:latest
     baseCommand: run_code.py
-    stdout: impact_stdout.txt
     inputs:
         inputstring:
             type: string
