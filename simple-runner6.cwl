@@ -1,7 +1,7 @@
 cwlVersion: v1.2
 $graph:
   - class: Workflow
-    id: simple-runner-workflow5
+    id: simple-runner-workflow6
     label: simple runner
     doc: simple runner
     requirements:
